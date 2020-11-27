@@ -9,9 +9,12 @@ export class DirectivaComponent{
 
   listaCurso: string[] = ['Typescript', 'Javascript', 'Java Se'];
 
+  habilitar: boolean = true;
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
+ setHabilitar (): void{
+   this.habilitar = (this.habilitar == true)? false: true;
+ }
 
 }
