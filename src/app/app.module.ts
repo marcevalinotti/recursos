@@ -7,7 +7,7 @@ import { DirectivaComponent } from './directiva/directiva.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import {ClienteService} from './clientes/cliente.service';
 import { RouterModule, Routes } from '@angular/router';
-import { Route } from '@angular/compiler/src/core';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
   {path: '', redirectTo: './clientes', pathMatch: 'full'},
@@ -21,7 +21,8 @@ const routes: Routes = [
     AppComponent,
     FooterComponent,
     DirectivaComponent,
-    ClientesComponent
+    ClientesComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
